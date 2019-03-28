@@ -33,11 +33,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.totaln = new System.Windows.Forms.Label();
+            this.totala = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.cargar = new System.Windows.Forms.Button();
-            this.hora = new System.Windows.Forms.Label();
             this.fecha = new System.Windows.Forms.Label();
+            this.hora = new System.Windows.Forms.Label();
+            this.cargar = new System.Windows.Forms.Button();
             this.sincn = new System.Windows.Forms.Label();
             this.sinc = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -67,10 +71,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label9 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.totaln = new System.Windows.Forms.Label();
-            this.totala = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -153,6 +153,53 @@
             this.panel1.Size = new System.Drawing.Size(1598, 876);
             this.panel1.TabIndex = 2;
             // 
+            // totaln
+            // 
+            this.totaln.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.totaln.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.totaln.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totaln.Location = new System.Drawing.Point(1441, 708);
+            this.totaln.Name = "totaln";
+            this.totaln.Size = new System.Drawing.Size(135, 83);
+            this.totaln.TabIndex = 36;
+            this.totaln.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // totala
+            // 
+            this.totala.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.totala.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.totala.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totala.Location = new System.Drawing.Point(1441, 645);
+            this.totala.Name = "totala";
+            this.totala.Size = new System.Drawing.Size(135, 83);
+            this.totala.TabIndex = 35;
+            this.totala.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.label18.BackColor = System.Drawing.Color.SlateGray;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(1441, 501);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(135, 83);
+            this.label18.TabIndex = 34;
+            this.label18.Text = "TOTAL";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label18.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // label9
+            // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(1158, 836);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(439, 36);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "* Pacientes aún sin Categoria.";
+            // 
             // panel2
             // 
             this.panel2.AccessibleDescription = "";
@@ -183,6 +230,29 @@
             this.label16.Text = "INFORMACIÓN AL PACIENTE";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // fecha
+            // 
+            this.fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.fecha.BackColor = System.Drawing.Color.Transparent;
+            this.fecha.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha.Location = new System.Drawing.Point(830, -5);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(732, 64);
+            this.fecha.TabIndex = 33;
+            this.fecha.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // hora
+            // 
+            this.hora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.hora.BackColor = System.Drawing.Color.Transparent;
+            this.hora.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hora.ForeColor = System.Drawing.Color.White;
+            this.hora.Location = new System.Drawing.Point(665, 0);
+            this.hora.Name = "hora";
+            this.hora.Size = new System.Drawing.Size(159, 64);
+            this.hora.TabIndex = 34;
+            this.hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // cargar
             // 
             this.cargar.BackColor = System.Drawing.Color.Transparent;
@@ -193,29 +263,6 @@
             this.cargar.TabIndex = 1;
             this.cargar.UseVisualStyleBackColor = false;
             this.cargar.Click += new System.EventHandler(this.cargar_Click);
-            // 
-            // hora
-            // 
-            this.hora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.hora.BackColor = System.Drawing.Color.Transparent;
-            this.hora.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hora.ForeColor = System.Drawing.Color.White;
-            this.hora.Location = new System.Drawing.Point(729, 3);
-            this.hora.Name = "hora";
-            this.hora.Size = new System.Drawing.Size(159, 64);
-            this.hora.TabIndex = 34;
-            this.hora.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // fecha
-            // 
-            this.fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.fecha.BackColor = System.Drawing.Color.Transparent;
-            this.fecha.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecha.Location = new System.Drawing.Point(894, 0);
-            this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(668, 64);
-            this.fecha.TabIndex = 33;
-            this.fecha.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
             // sincn
             // 
@@ -435,7 +482,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(593, 83);
             this.label15.TabIndex = 14;
-            this.label15.Text = "MEDICINA NIÑOS";
+            this.label15.Text = "MEDICINA PEDIATRÍA";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
@@ -568,53 +615,6 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 5000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1158, 836);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(439, 36);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "* Pacientes aún sin Categoria.";
-            // 
-            // label18
-            // 
-            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.label18.BackColor = System.Drawing.Color.SlateGray;
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(1441, 501);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(135, 83);
-            this.label18.TabIndex = 34;
-            this.label18.Text = "TOTAL";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label18.Click += new System.EventHandler(this.label18_Click);
-            // 
-            // totaln
-            // 
-            this.totaln.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.totaln.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.totaln.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totaln.Location = new System.Drawing.Point(1441, 708);
-            this.totaln.Name = "totaln";
-            this.totaln.Size = new System.Drawing.Size(135, 83);
-            this.totaln.TabIndex = 36;
-            this.totaln.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // totala
-            // 
-            this.totala.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.totala.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.totala.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totala.Location = new System.Drawing.Point(1441, 645);
-            this.totala.Name = "totala";
-            this.totala.Size = new System.Drawing.Size(135, 83);
-            this.totala.TabIndex = 35;
-            this.totala.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
