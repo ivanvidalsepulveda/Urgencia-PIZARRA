@@ -482,7 +482,7 @@
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(593, 83);
             this.label15.TabIndex = 14;
-            this.label15.Text = "MEDICINA PEDIATRÍA";
+            this.label15.Text = "PEDIATRÍA";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
