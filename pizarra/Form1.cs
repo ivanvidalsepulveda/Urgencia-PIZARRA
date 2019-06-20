@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
-using System.Runtime.InteropServices;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Globalization;
 
 namespace pizarra
@@ -20,75 +12,18 @@ namespace pizarra
             InitializeComponent();
             this.CenterToScreen();
 
-            
         }
 
-        int imagenes;
-        int imagenes2;
-
+      
         SqlConnection con = new SqlConnection(@"Data Source = 192.168.100.13; Initial Catalog = CLINIWIN; Persist Security Info=True;User ID = TURGENCIA; Password=184114518");
 
-
-        
-
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
+       
         private void Form1_Load(object sender, EventArgs e)
         {
 
             timer1_Tick(null, null);
-
         }
 
-
-
-      
-
-        private void enTotal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-
-           
-           // pictureBox2.Width = this.Width - imagenes2;
-
-           // pictureBox1.Width = this.Width - 800;
-           // pictureBox2.Width = this.Width - 1600;
-           //pictureBox1.Height = this.Height - 1;
-
-
-
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
 
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -106,6 +41,7 @@ namespace pizarra
             // se arreglo ver la edad de los pacientes < o >= a 14 años 11 meses
             SqlCommand sc = new SqlCommand("SELECT COUNT(INGRESO.PAC_NUMFICHA) FROM INGRESO (nolock) LEFT JOIN FICHA  (nolock) ON FICHA.PAC_NUMFICHA = INGRESO.PAC_NUMFICHA LEFT JOIN PACIENTE  (nolock) ON FICHA.PAC_CORREL = PACIENTE.PAC_CORREL LEFT JOIN PRESTADOR  (nolock) ON INGRESO.PTD_RUT_TRAT = PRESTADOR.PTD_RUT WHERE FICHA.PAC_TIPO = 'U' AND datediff(MONTH,PAC_FECNAC,GETDATE()) >= 179 AND ING_CATEGORIZACION IS NULL AND INGRESO.SER_CODIGO = 'URG'AND INGRESO.ING_HORAING > DATEADD(D, -1, GETDATE())AND INGRESO.ING_HORAALTA IS NULL AND INGRESO.ING_FECCIER IS NULL AND NOT  EXISTS ( SELECT * FROM CAMILLA_ASIGNADA  (nolock) WHERE INGRESO.PAC_NUMFICHA = CAMILLA_ASIGNADA.PAC_NUMFICHA  AND INGRESO.ING_CORREL = CAMILLA_ASIGNADA.ING_CORREL  AND CAMILLA_ASIGNADA.CML_CODIGO IS NOT NULL )", con);
             /// n° pacientes en espera adultos
+
 
             sc.ExecuteNonQuery();
             int scc = ((int)sc.ExecuteScalar());
@@ -164,7 +100,6 @@ namespace pizarra
 
 
 
-
             SqlCommand c3 = new SqlCommand(" SELECT count(ING_CATEGORIZACION) as cantidad FROM INGRESO (nolock) LEFT JOIN FICHA  (nolock) ON FICHA.PAC_NUMFICHA = INGRESO.PAC_NUMFICHA LEFT JOIN PACIENTE (NOLOCK) ON PACIENTE.PAC_CORREL=FICHA.PAC_CORREL  WHERE FICHA.PAC_TIPO = 'U'  AND INGRESO.SER_CODIGO = 'URG' AND ING_CATEGORIZACION IN ('C3') AND datediff(MONTH,PAC_FECNAC,GETDATE()) >= 179 AND INGRESO.ING_HORAING > DATEADD(D, -1, GETDATE())AND INGRESO.ING_HORAALTA IS NULL AND INGRESO.ING_FECCIER IS NULL AND NOT  EXISTS ( SELECT * 	 FROM CAMILLA_ASIGNADA  (nolock) 	 WHERE INGRESO.PAC_NUMFICHA = CAMILLA_ASIGNADA.PAC_NUMFICHA 	 AND INGRESO.ING_CORREL = CAMILLA_ASIGNADA.ING_CORREL 	 AND CAMILLA_ASIGNADA.CML_CODIGO IS NOT NULL ) ", con);
             ///adulto c3
 
@@ -178,8 +113,6 @@ namespace pizarra
             c3n.ExecuteNonQuery();
             int c33n = ((int)c3n.ExecuteScalar());
             mnc3.Text = c33n.ToString();
-
-
 
 
 
@@ -220,20 +153,6 @@ namespace pizarra
 
 
         }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label18_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -103,7 +103,7 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "EN ESPERA";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+          
             // 
             // panel1
             // 
@@ -158,7 +158,7 @@
             this.totaln.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.totaln.BackColor = System.Drawing.Color.WhiteSmoke;
             this.totaln.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totaln.Location = new System.Drawing.Point(1441, 708);
+            this.totaln.Location = new System.Drawing.Point(1454, 713);
             this.totaln.Name = "totaln";
             this.totaln.Size = new System.Drawing.Size(135, 83);
             this.totaln.TabIndex = 36;
@@ -169,7 +169,7 @@
             this.totala.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.totala.BackColor = System.Drawing.Color.WhiteSmoke;
             this.totala.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totala.Location = new System.Drawing.Point(1441, 645);
+            this.totala.Location = new System.Drawing.Point(1454, 650);
             this.totala.Name = "totala";
             this.totala.Size = new System.Drawing.Size(135, 83);
             this.totala.TabIndex = 35;
@@ -183,11 +183,11 @@
             this.label18.ForeColor = System.Drawing.Color.White;
             this.label18.Location = new System.Drawing.Point(1441, 501);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(135, 83);
+            this.label18.Size = new System.Drawing.Size(149, 83);
             this.label18.TabIndex = 34;
             this.label18.Text = "TOTAL";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+           
             // 
             // label9
             // 
@@ -375,7 +375,7 @@
             this.mac3.Size = new System.Drawing.Size(135, 83);
             this.mac3.TabIndex = 23;
             this.mac3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.mac3.Click += new System.EventHandler(this.label17_Click);
+           
             // 
             // mac2
             // 
@@ -387,7 +387,7 @@
             this.mac2.Size = new System.Drawing.Size(135, 83);
             this.mac2.TabIndex = 22;
             this.mac2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.mac2.Click += new System.EventHandler(this.label16_Click);
+           
             // 
             // enTotal
             // 
@@ -399,7 +399,7 @@
             this.enTotal.Size = new System.Drawing.Size(212, 83);
             this.enTotal.TabIndex = 21;
             this.enTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.enTotal.Click += new System.EventHandler(this.enTotal_Click);
+            
             // 
             // enAtencion
             // 
@@ -469,7 +469,7 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "C5";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label12.Click += new System.EventHandler(this.label12_Click);
+           
             // 
             // label15
             // 
@@ -484,7 +484,7 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "PEDIATRÍA";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label15.Click += new System.EventHandler(this.label15_Click);
+          
             // 
             // label14
             // 
@@ -594,8 +594,7 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "TOTAL";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
+           
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -608,7 +607,7 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "EN BOX";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+
             // 
             // timer1
             // 
@@ -628,7 +627,6 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.Resize += new System.EventHandler(this.Form1_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
