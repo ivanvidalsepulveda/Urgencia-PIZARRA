@@ -42,17 +42,17 @@
             this.fecha = new System.Windows.Forms.Label();
             this.hora = new System.Windows.Forms.Label();
             this.cargar = new System.Windows.Forms.Button();
-            this.sincn = new System.Windows.Forms.Label();
-            this.sinc = new System.Windows.Forms.Label();
+            this.scn = new System.Windows.Forms.Label();
+            this.sca = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.MNC5N = new System.Windows.Forms.Label();
-            this.mnc4 = new System.Windows.Forms.Label();
-            this.mnc3 = new System.Windows.Forms.Label();
-            this.mnc2 = new System.Windows.Forms.Label();
-            this.mac55 = new System.Windows.Forms.Label();
-            this.mac4 = new System.Windows.Forms.Label();
-            this.mac3 = new System.Windows.Forms.Label();
-            this.mac2 = new System.Windows.Forms.Label();
+            this.c5n = new System.Windows.Forms.Label();
+            this.c4n = new System.Windows.Forms.Label();
+            this.c3n = new System.Windows.Forms.Label();
+            this.c2n = new System.Windows.Forms.Label();
+            this.c5a = new System.Windows.Forms.Label();
+            this.c4a = new System.Windows.Forms.Label();
+            this.c3a = new System.Windows.Forms.Label();
+            this.c2a = new System.Windows.Forms.Label();
             this.enTotal = new System.Windows.Forms.Label();
             this.enAtencion = new System.Windows.Forms.Label();
             this.enEspera = new System.Windows.Forms.Label();
@@ -103,7 +103,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "EN ESPERA";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-          
             // 
             // panel1
             // 
@@ -117,17 +116,17 @@
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.sincn);
-            this.panel1.Controls.Add(this.sinc);
+            this.panel1.Controls.Add(this.scn);
+            this.panel1.Controls.Add(this.sca);
             this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.MNC5N);
-            this.panel1.Controls.Add(this.mnc4);
-            this.panel1.Controls.Add(this.mnc3);
-            this.panel1.Controls.Add(this.mnc2);
-            this.panel1.Controls.Add(this.mac55);
-            this.panel1.Controls.Add(this.mac4);
-            this.panel1.Controls.Add(this.mac3);
-            this.panel1.Controls.Add(this.mac2);
+            this.panel1.Controls.Add(this.c5n);
+            this.panel1.Controls.Add(this.c4n);
+            this.panel1.Controls.Add(this.c3n);
+            this.panel1.Controls.Add(this.c2n);
+            this.panel1.Controls.Add(this.c5a);
+            this.panel1.Controls.Add(this.c4a);
+            this.panel1.Controls.Add(this.c3a);
+            this.panel1.Controls.Add(this.c2a);
             this.panel1.Controls.Add(this.enTotal);
             this.panel1.Controls.Add(this.enAtencion);
             this.panel1.Controls.Add(this.enEspera);
@@ -187,7 +186,6 @@
             this.label18.TabIndex = 34;
             this.label18.Text = "TOTAL";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-           
             // 
             // label9
             // 
@@ -264,27 +262,27 @@
             this.cargar.UseVisualStyleBackColor = false;
             this.cargar.Click += new System.EventHandler(this.cargar_Click);
             // 
-            // sincn
+            // scn
             // 
-            this.sincn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.sincn.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.sincn.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sincn.Location = new System.Drawing.Point(1405, 713);
-            this.sincn.Name = "sincn";
-            this.sincn.Size = new System.Drawing.Size(135, 83);
-            this.sincn.TabIndex = 32;
-            this.sincn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.scn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.scn.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.scn.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scn.Location = new System.Drawing.Point(1405, 713);
+            this.scn.Name = "scn";
+            this.scn.Size = new System.Drawing.Size(135, 83);
+            this.scn.TabIndex = 32;
+            this.scn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // sinc
+            // sca
             // 
-            this.sinc.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.sinc.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.sinc.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sinc.Location = new System.Drawing.Point(1405, 650);
-            this.sinc.Name = "sinc";
-            this.sinc.Size = new System.Drawing.Size(135, 83);
-            this.sinc.TabIndex = 31;
-            this.sinc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.sca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.sca.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.sca.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sca.Location = new System.Drawing.Point(1405, 650);
+            this.sca.Name = "sca";
+            this.sca.Size = new System.Drawing.Size(135, 83);
+            this.sca.TabIndex = 31;
+            this.sca.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label17
             // 
@@ -299,95 +297,93 @@
             this.label17.Text = "*S/C";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MNC5N
+            // c5n
             // 
-            this.MNC5N.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.MNC5N.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.MNC5N.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MNC5N.Location = new System.Drawing.Point(1239, 713);
-            this.MNC5N.Name = "MNC5N";
-            this.MNC5N.Size = new System.Drawing.Size(135, 83);
-            this.MNC5N.TabIndex = 29;
-            this.MNC5N.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c5n.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.c5n.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.c5n.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c5n.Location = new System.Drawing.Point(1239, 713);
+            this.c5n.Name = "c5n";
+            this.c5n.Size = new System.Drawing.Size(135, 83);
+            this.c5n.TabIndex = 29;
+            this.c5n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mnc4
+            // c4n
             // 
-            this.mnc4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.mnc4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.mnc4.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnc4.Location = new System.Drawing.Point(1073, 713);
-            this.mnc4.Name = "mnc4";
-            this.mnc4.Size = new System.Drawing.Size(135, 83);
-            this.mnc4.TabIndex = 28;
-            this.mnc4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c4n.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.c4n.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.c4n.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c4n.Location = new System.Drawing.Point(1073, 713);
+            this.c4n.Name = "c4n";
+            this.c4n.Size = new System.Drawing.Size(135, 83);
+            this.c4n.TabIndex = 28;
+            this.c4n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mnc3
+            // c3n
             // 
-            this.mnc3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.mnc3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.mnc3.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnc3.Location = new System.Drawing.Point(914, 713);
-            this.mnc3.Name = "mnc3";
-            this.mnc3.Size = new System.Drawing.Size(135, 83);
-            this.mnc3.TabIndex = 27;
-            this.mnc3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c3n.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.c3n.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.c3n.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c3n.Location = new System.Drawing.Point(914, 713);
+            this.c3n.Name = "c3n";
+            this.c3n.Size = new System.Drawing.Size(135, 83);
+            this.c3n.TabIndex = 27;
+            this.c3n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mnc2
+            // c2n
             // 
-            this.mnc2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.mnc2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.mnc2.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mnc2.Location = new System.Drawing.Point(755, 713);
-            this.mnc2.Name = "mnc2";
-            this.mnc2.Size = new System.Drawing.Size(135, 83);
-            this.mnc2.TabIndex = 26;
-            this.mnc2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c2n.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.c2n.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.c2n.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c2n.Location = new System.Drawing.Point(755, 713);
+            this.c2n.Name = "c2n";
+            this.c2n.Size = new System.Drawing.Size(135, 83);
+            this.c2n.TabIndex = 26;
+            this.c2n.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mac55
+            // c5a
             // 
-            this.mac55.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mac55.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.mac55.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mac55.Location = new System.Drawing.Point(1239, 650);
-            this.mac55.Name = "mac55";
-            this.mac55.Size = new System.Drawing.Size(135, 83);
-            this.mac55.TabIndex = 25;
-            this.mac55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c5a.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.c5a.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.c5a.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c5a.Location = new System.Drawing.Point(1239, 650);
+            this.c5a.Name = "c5a";
+            this.c5a.Size = new System.Drawing.Size(135, 83);
+            this.c5a.TabIndex = 25;
+            this.c5a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mac4
+            // c4a
             // 
-            this.mac4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mac4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.mac4.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mac4.Location = new System.Drawing.Point(1073, 650);
-            this.mac4.Name = "mac4";
-            this.mac4.Size = new System.Drawing.Size(135, 83);
-            this.mac4.TabIndex = 24;
-            this.mac4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.c4a.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.c4a.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.c4a.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c4a.Location = new System.Drawing.Point(1073, 650);
+            this.c4a.Name = "c4a";
+            this.c4a.Size = new System.Drawing.Size(135, 83);
+            this.c4a.TabIndex = 24;
+            this.c4a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mac3
+            // c3a
             // 
-            this.mac3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mac3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.mac3.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mac3.Location = new System.Drawing.Point(914, 650);
-            this.mac3.Name = "mac3";
-            this.mac3.Size = new System.Drawing.Size(135, 83);
-            this.mac3.TabIndex = 23;
-            this.mac3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-           
+            this.c3a.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.c3a.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.c3a.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c3a.Location = new System.Drawing.Point(914, 650);
+            this.c3a.Name = "c3a";
+            this.c3a.Size = new System.Drawing.Size(135, 83);
+            this.c3a.TabIndex = 23;
+            this.c3a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // mac2
+            // c2a
             // 
-            this.mac2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.mac2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.mac2.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mac2.Location = new System.Drawing.Point(755, 659);
-            this.mac2.Name = "mac2";
-            this.mac2.Size = new System.Drawing.Size(135, 83);
-            this.mac2.TabIndex = 22;
-            this.mac2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-           
+            this.c2a.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.c2a.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.c2a.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c2a.Location = new System.Drawing.Point(755, 659);
+            this.c2a.Name = "c2a";
+            this.c2a.Size = new System.Drawing.Size(135, 83);
+            this.c2a.TabIndex = 22;
+            this.c2a.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // enTotal
             // 
@@ -399,7 +395,6 @@
             this.enTotal.Size = new System.Drawing.Size(212, 83);
             this.enTotal.TabIndex = 21;
             this.enTotal.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            
             // 
             // enAtencion
             // 
@@ -469,7 +464,6 @@
             this.label12.TabIndex = 15;
             this.label12.Text = "C5";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-           
             // 
             // label15
             // 
@@ -484,7 +478,6 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "PEDIATRÍA";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-          
             // 
             // label14
             // 
@@ -594,7 +587,7 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "TOTAL";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-           
+            // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -607,7 +600,6 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "EN BOX";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
             // 
             // timer1
             // 
@@ -656,21 +648,21 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label mac4;
-        private System.Windows.Forms.Label mac3;
-        private System.Windows.Forms.Label mac2;
+        private System.Windows.Forms.Label c4a;
+        private System.Windows.Forms.Label c3a;
+        private System.Windows.Forms.Label c2a;
         private System.Windows.Forms.Label enTotal;
         private System.Windows.Forms.Label enAtencion;
         private System.Windows.Forms.Label enEspera;
-        private System.Windows.Forms.Label mnc4;
-        private System.Windows.Forms.Label mnc3;
-        private System.Windows.Forms.Label mnc2;
+        private System.Windows.Forms.Label c4n;
+        private System.Windows.Forms.Label c3n;
+        private System.Windows.Forms.Label c2n;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label MNC5N;
-        private System.Windows.Forms.Label mac55;
-        private System.Windows.Forms.Label sincn;
-        private System.Windows.Forms.Label sinc;
+        private System.Windows.Forms.Label c5n;
+        private System.Windows.Forms.Label c5a;
+        private System.Windows.Forms.Label scn;
+        private System.Windows.Forms.Label sca;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label fecha;
         private System.Windows.Forms.Label hora;
