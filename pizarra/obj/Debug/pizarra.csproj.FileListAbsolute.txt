@@ -15,7 +15,6 @@ C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\bin\Debug\pizarra.exe.
 C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\bin\Debug\pizarra.application
 C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\bin\Debug\pizarra.exe
 C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\bin\Debug\pizarra.pdb
-C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\obj\Debug\pizarra.csprojAssemblyReference.cache
 C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\obj\Debug\pizarra.Form1.resources
 C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\obj\Debug\pizarra.Properties.Resources.resources
 C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\obj\Debug\pizarra.csproj.GenerateResource.cache
@@ -24,3 +23,4 @@ C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\obj\Debug\pizarra.exe.
 C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\obj\Debug\pizarra.application
 C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\obj\Debug\pizarra.exe
 C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\obj\Debug\pizarra.pdb
+C:\Users\ividal\Documents\GitHub\Urgencia-PIZARRA\pizarra\obj\Debug\pizarra.csprojAssemblyReference.cache

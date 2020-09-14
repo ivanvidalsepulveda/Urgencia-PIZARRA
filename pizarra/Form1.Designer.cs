@@ -214,7 +214,7 @@
             this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(14, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1576, 64);
+            this.panel2.Size = new System.Drawing.Size(1581, 64);
             this.panel2.TabIndex = 18;
             this.panel2.Tag = "";
             // 
@@ -233,9 +233,9 @@
             this.fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.fecha.BackColor = System.Drawing.Color.Transparent;
             this.fecha.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecha.Location = new System.Drawing.Point(686, -5);
+            this.fecha.Location = new System.Drawing.Point(730, -3);
             this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(876, 64);
+            this.fecha.Size = new System.Drawing.Size(845, 64);
             this.fecha.TabIndex = 33;
             this.fecha.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
@@ -245,7 +245,7 @@
             this.hora.BackColor = System.Drawing.Color.Transparent;
             this.hora.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hora.ForeColor = System.Drawing.Color.White;
-            this.hora.Location = new System.Drawing.Point(665, 0);
+            this.hora.Location = new System.Drawing.Point(587, 0);
             this.hora.Name = "hora";
             this.hora.Size = new System.Drawing.Size(159, 64);
             this.hora.TabIndex = 34;
