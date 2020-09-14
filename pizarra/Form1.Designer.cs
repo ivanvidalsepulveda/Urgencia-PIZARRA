@@ -233,9 +233,9 @@
             this.fecha.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.fecha.BackColor = System.Drawing.Color.Transparent;
             this.fecha.Font = new System.Drawing.Font("Century Gothic", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecha.Location = new System.Drawing.Point(830, -5);
+            this.fecha.Location = new System.Drawing.Point(686, -5);
             this.fecha.Name = "fecha";
-            this.fecha.Size = new System.Drawing.Size(732, 64);
+            this.fecha.Size = new System.Drawing.Size(876, 64);
             this.fecha.TabIndex = 33;
             this.fecha.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             // 
