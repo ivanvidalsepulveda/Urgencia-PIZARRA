@@ -12,8 +12,8 @@
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>C:\Users\ividal\Desktop\Pizarra 14-09-2020-v2\</PublishUrl>
-    <Install>true</Install>
+    <PublishUrl>C:\Users\Ivan\Desktop\Urgencia Chillan\</PublishUrl>
+    <Install>false</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
     <UpdateMode>Foreground</UpdateMode>
